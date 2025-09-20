@@ -15,7 +15,7 @@ export default function Navbar() {
           />
         </div>
 
-        <div className="hidden md:flex gap-[30px] ml-18">
+        <div className="hidden md:flex gap-[20px]  lg:gap-[30px] ml-4 lg:ml-18">
           {["HABERLER", "ETKİNLİKLER", "MÜZİKLER", "VİDEOLAR", "İLETİŞİM"].map(
             (item) => (
               <span
@@ -27,7 +27,7 @@ export default function Navbar() {
             )
           )}
         </div>
-        <div className="hidden md:flex items-center gap-9 ml-auto">
+        <div className="hidden md:flex items-center gap-4 lg:gap-9 ml-4 lg:ml-auto">
           <FiSearch className="text-2xl " />
           <button className="bg-white text-black font-bold text-[14px] leading-[100%] px-5 h-10 w-[120px] uppercase text-center cursor-pointer">
             GİRİŞ YAP

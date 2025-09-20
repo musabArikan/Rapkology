@@ -14,9 +14,9 @@ const Footer = () => {
         <input
           type="email"
           placeholder=""
-          className="flex-1 bg-transparent outline-none px-3 text-white placeholder-transparent"
+          className="flex-1 bg-transparent outline-none px-3 text-white placeholder-transparent max-w-[30%] lg:max-w-[90%]"
         />
-        <button className=" text-sm flex items-center gap-2 font-bold  text-[#F0E74D] px-4 py-1">
+        <button className="cursor-pointer text-sm flex items-center gap-2 font-bold  text-[#F0E74D] px-3 lg:px-4 py-1">
           GÖNDER
           <span>→</span>
         </button>

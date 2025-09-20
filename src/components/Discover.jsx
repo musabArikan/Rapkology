@@ -85,7 +85,7 @@ const Discover = () => {
           </div>
         </div>
 
-        <div className="flex flex-col gap-12 md:gap-0 space-y-6">
+        <div className="flex flex-col !gap-15 md:gap-0 ">
           {(typeof window !== "undefined" && window.innerWidth < 768
             ? posts.slice(0, 4)
             : posts.slice(0, 5)
@@ -106,11 +106,11 @@ const Discover = () => {
                   {post.date}
                 </p>
               </div>
-              <div className="p-0 md:p-4 md:  pt-0 space-y-2 max-w-[400px]">
+              <div className="p-0 md:p-4 md:pt-0 space-y-2 max-w-[300px] lg:max-w-[400px]">
                 <div className="flex items-center gap-2 text-[16px] font-normal">
                   <p>{post.title}</p>
                 </div>
-                <p className="text-[20px] md:text-[25px] font-bold mt-4 mb-6 text-white leading-[1.1]">
+                <p className="text-[20px] md:text-[22px] font-bold mt-4 mb-6 text-white leading-[1.1]">
                   {post.desc}
                 </p>
                 <hr className="w-full text-[#3B3B3B]" />
@@ -125,7 +125,7 @@ const Discover = () => {
 
       <div className=" flex flex-col w-full md:w-[30%] py-4  space-y-6 flex-1">
         <div className="hidden md:flex flex-wrap gap-2">
-          <h3 className="text-3xl font-bold text-nowrap mb-2">
+          <h3 className="text-3xl font-bold lg:text-nowrap mb-2">
             NE GÖRMEK İSTERSİN?
           </h3>
           {categories.map((cat, idx) => (
@@ -133,8 +133,8 @@ const Discover = () => {
               key={cat}
               className={
                 idx === 1
-                  ? "px-4 py-1  text-[16px] font-bold bg-[#F0E74D] text-black"
-                  : "px-4 py-1 border border-white text-[16px] transition"
+                  ? "px-4 py-1  text-[16px] font-bold bg-[#F0E74D] text-black cursor-pointer"
+                  : "px-4 py-1 border border-white text-[16px] transition cursor-pointer"
               }
             >
               {cat}

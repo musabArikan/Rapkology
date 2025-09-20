@@ -49,7 +49,7 @@ export default function Header() {
 
   return (
     <>
-      <header className="hidden md:block w-full relative overflow-hidden h-[45vw] max-h-[810px] min-h-[320px] -top-[77px] opacity-100">
+      <header className="hidden md:block w-full relative overflow-hidden h-[45vw] max-h-[810px] min-h-[320px] mt-[-77px] opacity-100">
         <Swiper
           modules={[Autoplay, Pagination, Navigation]}
           loop
@@ -86,14 +86,14 @@ export default function Header() {
                   />
                 )}
 
-                <div className="absolute top-1/2 right-30 z-30 -translate-y-1/2 flex flex-col w-[450px] max-w-full bg-transparent">
+                <div className="absolute top-1/2 right-18 lg:right-30 z-30 -translate-y-1/2 flex flex-col w-[300px] lg:w-[450px] max-w-full bg-transparent">
                   <h1
-                    className={`font-bold text-[43.1px] leading-[1.1] tracking-[-0.02em] mb-4 ${textColor}`}
+                    className={`font-bold text-[25px]  lg:text-[43.1px] leading-[1.1] tracking-[-0.02em] mb-4 ${textColor}`}
                   >
                     {slide.title}
                   </h1>
                   <p
-                    className={`font-normal text-[16px] leading-[1.2] tracking-[0.015em] mb-6 ${textColor}`}
+                    className={`font-normal text-[12px] lg:text-[16px] leading-[1.2] tracking-[0.015em] mb-6 ${textColor}`}
                   >
                     {slide.description}
                   </p>
@@ -103,10 +103,10 @@ export default function Header() {
                       alt="Button Background"
                       width={136}
                       height={38}
-                      className=" cursor-pointer"
+                      className=" cursor-pointer w-[110px] h-[30px] lg:w-[136px] lg:h-[38px]"
                       priority
                     />
-                    <span className="absolute inset-0 flex items-center justify-center text-black font-bold text-[14px] leading-none tracking-normal text-center pointer-events-none pb-2 w-[136]">
+                    <span className="absolute inset-0 flex items-center justify-center text-black font-bold text-[12px] lg:text-[14px] leading-none tracking-normal text-center pointer-events-none pb-2 w-[110px] lg:w-[136px]">
                       Devamını Oku
                     </span>
                   </div>
@@ -116,18 +116,18 @@ export default function Header() {
           })}
         </Swiper>
 
-        <div className="custom-prev absolute left-13 top-1/2 z-40 -translate-y-1/2 cursor-pointer">
+        <div className="custom-prev absolute left-8 lg:left-13 top-1/2 z-40 -translate-y-1/2 cursor-pointer">
           <Image
             src="/icons/home/header/slider-left-btn.png"
-            alt="Önceki"
+            alt="Before"
             width={24}
             height={24}
           />
         </div>
-        <div className="custom-next absolute right-13 top-1/2 z-40 -translate-y-1/2 cursor-pointer">
+        <div className="custom-next absolute right-8 lg:right-13 top-1/2 z-40 -translate-y-1/2 cursor-pointer">
           <Image
             src="/icons/home/header/slider-right-btn.png"
-            alt="Sonraki"
+            alt="After"
             width={24}
             height={24}
           />
@@ -234,6 +234,7 @@ export default function Header() {
                 zIndex: 10,
                 pointerEvents: "none",
               }}
+              className="min-h-25 object-cover"
               priority
             />
           </div>
