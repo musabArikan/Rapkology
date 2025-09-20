@@ -1,36 +1,39 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Proje Teknik Detayları
 
-## Getting Started
+Projenin genelinde **slide** ve **image** kullanımı yoğun olduğu için **Next.js** tercih yerine bir karar.  
+Next.js’in `Image` bileşeni ve render özellikleri sayesinde, proje canlıya alınsaydı **SEO açısından önemli katkılar** sağlayacaktı.
 
-First, run the development server:
+## Yapı ve Organizasyon
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+- **Modüler ve tekrar kullanılabilir component** yapısı kuruldu.
+- Çok sayıda görsel, ikon ve vektör bulunduğundan dosyalara **anlamlı isimler** verilerek yazılımcılar açısından erişilebilirlik artırıldı.
+- Ortak bir **container yapısı** ile sayfada gerekli hizalamalar sağlandı.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Stil ve Responsive Tasarım
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+- **TailwindCSS** kullanılarak responsive uyumluluk artırıldı ve klasik CSS kullanımı minimum seviyede tutuldu.
+- Normal CSS dosyalarında Tailwind’in `@apply` özelliği kullanıldı.  
+  Böylece doğrudan Tailwind sınıfları ile erişilemeyen yapılara müdahale edilerek **pure CSS yazma ihtiyacı azaltıldı** ve **optimizasyon artırıldı**.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Tasarım ve Performans
 
-## Learn More
+- Figma tasarımları baz alınarak geliştirme yapıldı.
+- Eğer “extra” başlığındaki tasarım da uygulanacak olsaydı, farklı sayfalarda tekrar eden yapılar göz önünde bulundurularak dosya yapısı buna göre organize edilirdi.
+- **Özel imgeler** dışında, performans avantajı nedeniyle **ikon kütüphanesi** kullanıldı.  
+  Çünkü ikonların yüklenme maliyeti görsellere göre çok daha düşüktür.
+- Projede kullanılan **Next.js Image** özelliği sayesinde görseller için lazy loading, otomatik optimizasyon ve farklı çözünürlükler desteklendi.  
+  Bu da **yükleme hızını ve SEO değerini** artırdı.
 
-To learn more about Next.js, take a look at the following resources:
+## Özel Bölümler
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- **Monthly Favorites** kısmında sabit bir tasarım yerine, birden fazla “Top 10 Şarkı” listelenme ihtimaline karşı **Swiper.js ile responsive bir slider** eklendi.
+- **Keşfet (Discover)** bölümünde ise belirtilen **mock datalar** projeye entegre edilerek ilgili alanlarda kullanıldı.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## Sonuç
 
-## Deploy on Vercel
+Bu yaklaşımlar sayesinde proje:
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+- **Performans odaklı**,
+- **SEO uyumlu**,
+- **Erişilebilir ve geliştirici dostu**,
+- **Modüler ve sürdürülebilir** bir yapıya kavuşmuştur.
