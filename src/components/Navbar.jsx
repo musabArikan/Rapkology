@@ -20,7 +20,7 @@ export default function Navbar() {
             (item) => (
               <span
                 key={item}
-                className="text-sm font-normal tracking-wide uppercase select-none"
+                className="text-sm cursor-pointer font-normal tracking-wide uppercase select-none"
               >
                 {item}
               </span>
