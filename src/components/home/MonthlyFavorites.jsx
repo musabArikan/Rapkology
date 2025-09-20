@@ -81,8 +81,7 @@ export default function App() {
                   alt="half-cover-picture"
                   width={92}
                   height={184}
-                  style={{ objectFit: "cover", borderRadius: "8px" }}
-                  className="absolute left-0 top-0 z-10 hidden md:block"
+                  className=" object-cover rounded-[8px] absolute left-0 top-0 z-10 hidden md:block"
                 />
 
                 <Image
@@ -90,13 +89,7 @@ export default function App() {
                   alt="play-btn"
                   width={48}
                   height={48}
-                  style={{
-                    position: "absolute",
-                    left: -18,
-                    top: 80,
-                    zIndex: 20,
-                  }}
-                  className="object-contain h-14 hidden md:block"
+                  className="absolute left-[-18px] top-[80px] z-20 object-contain h-14 hidden md:block"
                 />
                 <Image
                   src="/images/home/monthlyFavorites/fav-1/cover-picture.png"
@@ -104,11 +97,9 @@ export default function App() {
                   width={160}
                   height={160}
                   style={{
-                    objectFit: "cover",
-                    borderRadius: "8px",
                     transform: "rotate(-9.48deg)",
                   }}
-                  className="md:hidden"
+                  className="md:hidden object-cover rounded-lg"
                 />
 
                 <Image
@@ -116,12 +107,7 @@ export default function App() {
                   alt="play-btn"
                   width={49}
                   height={49}
-                  style={{
-                    position: "absolute",
-                    top: 55,
-                    zIndex: 20,
-                  }}
-                  className="object-contain h-14 md:hidden "
+                  className="absolute top-[55px] z-20 object-contain h-14 md:hidden "
                 />
               </div>
 
@@ -146,12 +132,7 @@ export default function App() {
                 alt="yellow-vector"
                 width={274}
                 height={47}
-                style={{
-                  position: "absolute",
-                  left: 0,
-                  bottom: -22,
-                  zIndex: 30,
-                }}
+                className="absolute left-0 bottom-[-22px] z-30"
               />
             </div>
           </SwiperSlide>
@@ -163,8 +144,7 @@ export default function App() {
                   alt="half-cover-picture"
                   width={92}
                   height={184}
-                  style={{ objectFit: "cover", borderRadius: "8px" }}
-                  className="absolute left-0 top-0 z-10 hidden md:block"
+                  className="object-cover rounded-lg absolute left-0 top-0 z-10 hidden md:block"
                 />
 
                 <Image
@@ -172,13 +152,7 @@ export default function App() {
                   alt="play-btn"
                   width={48}
                   height={48}
-                  style={{
-                    position: "absolute",
-                    left: -18,
-                    top: 80,
-                    zIndex: 20,
-                  }}
-                  className="object-contain h-14 hidden md:block"
+                  className="absolute left-[-18px] top-[80px] z-20 object-contain h-14 hidden md:block"
                 />
                 <Image
                   src="/images/home/monthlyFavorites/fav-2/cover-picture.png"
@@ -186,11 +160,9 @@ export default function App() {
                   width={160}
                   height={160}
                   style={{
-                    objectFit: "cover",
-                    borderRadius: "8px",
                     transform: "rotate(-9.48deg)",
                   }}
-                  className="md:hidden"
+                  className="md:hidden object-cover rounded-lg"
                 />
 
                 <Image
@@ -198,12 +170,7 @@ export default function App() {
                   alt="play-btn"
                   width={49}
                   height={49}
-                  style={{
-                    position: "absolute",
-                    top: 55,
-                    zIndex: 20,
-                  }}
-                  className="object-contain h-14 md:hidden "
+                  className="absolute top-[55px] z-20 object-contain h-14 md:hidden "
                 />
               </div>
 
@@ -225,12 +192,7 @@ export default function App() {
                 alt="yellow-vector"
                 width={274}
                 height={47}
-                style={{
-                  position: "absolute",
-                  left: 0,
-                  bottom: -22,
-                  zIndex: 30,
-                }}
+                className="absolute left-0 bottom-[-22px] z-30"
               />
             </div>
           </SwiperSlide>
@@ -242,8 +204,7 @@ export default function App() {
                   alt="half-cover-picture"
                   width={92}
                   height={184}
-                  style={{ objectFit: "cover", borderRadius: "8px" }}
-                  className="absolute left-0 top-0 z-10 hidden md:block"
+                  className="object-cover rounded-lg absolute left-0 top-0 z-10 hidden md:block"
                 />
 
                 <Image
@@ -251,13 +212,7 @@ export default function App() {
                   alt="play-btn"
                   width={48}
                   height={48}
-                  style={{
-                    position: "absolute",
-                    left: -18,
-                    top: 80,
-                    zIndex: 20,
-                  }}
-                  className="object-contain h-14 hidden md:block"
+                  className="absolute left-[-18px] top-[80px] z-20 object-contain h-14 hidden md:block"
                 />
                 <Image
                   src="/images/home/monthlyFavorites/fav-3/cover-picture.png"
@@ -265,11 +220,9 @@ export default function App() {
                   width={160}
                   height={160}
                   style={{
-                    objectFit: "cover",
-                    borderRadius: "8px",
                     transform: "rotate(-9.48deg)",
                   }}
-                  className="md:hidden"
+                  className="object-cover rounded-lg md:hidden"
                 />
 
                 <Image
@@ -277,12 +230,7 @@ export default function App() {
                   alt="play-btn"
                   width={49}
                   height={49}
-                  style={{
-                    position: "absolute",
-                    top: 55,
-                    zIndex: 20,
-                  }}
-                  className="object-contain h-14 md:hidden "
+                  className="object-contain h-14 md:hidden absolute top-[55px] z-20 "
                 />
               </div>
 
@@ -307,12 +255,7 @@ export default function App() {
                 alt="yellow-vector"
                 width={274}
                 height={47}
-                style={{
-                  position: "absolute",
-                  left: 0,
-                  bottom: -22,
-                  zIndex: 30,
-                }}
+                className="absolute left-0 bottom-[-22px] z-30"
               />
             </div>
           </SwiperSlide>

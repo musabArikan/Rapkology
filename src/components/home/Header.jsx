@@ -73,7 +73,7 @@ export default function Header() {
                     alt={`Header görseli ${index + 1}`}
                     width={1146}
                     height={703}
-                    style={{ objectFit: "cover" }}
+                    className="object-cover"
                     priority
                   />
                 ) : (
@@ -81,7 +81,7 @@ export default function Header() {
                     src={slide.image}
                     alt={`Header görseli ${index + 1}`}
                     fill
-                    style={{ objectFit: "cover" }}
+                    className="object-cover"
                     priority
                   />
                 )}
@@ -137,15 +137,7 @@ export default function Header() {
           src="/vectors/home/header/metal-texture-with-dust-scratches-cracks-textured-backgrounds.png"
           alt="Metal texture boya efekti"
           fill
-          style={{
-            objectFit: "cover",
-            position: "absolute",
-            left: 0,
-            top: 0,
-            zIndex: 20,
-            pointerEvents: "none",
-            mixBlendMode: "multiply",
-          }}
+          className="object-cover absolute left-0 top-0 z-20 cursor-none mix-blend-multiply"
           priority
         />
 
@@ -154,15 +146,7 @@ export default function Header() {
           alt="Dalga vektörü"
           width={1920}
           height={543}
-          style={{
-            position: "absolute",
-            left: 0,
-            bottom: -20,
-            width: "100%",
-            height: "auto",
-            zIndex: 10,
-            pointerEvents: "none",
-          }}
+          className="absolute left-0 bottom-[-20px] w-full h-auto z-10 cursor-none"
           priority
         />
       </header>
@@ -211,12 +195,7 @@ export default function Header() {
               src="/vectors/home/header/metal-texture-with-dust-scratches-cracks-textured-backgrounds.png"
               alt="metal texture"
               fill
-              style={{
-                objectFit: "cover",
-                zIndex: 30,
-                pointerEvents: "none",
-                mixBlendMode: "multiply",
-              }}
+              className="object-cover z-30 cursor-none mix-blend-multiply"
               priority
             />
 
@@ -225,16 +204,7 @@ export default function Header() {
               alt="dark vector"
               width={1920}
               height={543}
-              style={{
-                position: "absolute",
-                left: 0,
-                bottom: -8,
-                width: "100%",
-                height: "auto",
-                zIndex: 10,
-                pointerEvents: "none",
-              }}
-              className="min-h-25 object-cover"
+              className="min-h-25 object-cover absolute left-0 bottom-[-8px] w-full h-auto z-10 cursor-none"
               priority
             />
           </div>

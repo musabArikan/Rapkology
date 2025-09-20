@@ -93,17 +93,11 @@ export default function TrendsHero() {
                       className="object-cover"
                     />
                   </div>
-                  <span
-                    className="font-sans text-[16px] leading-[120%] tracking-[1.5%]"
-                    style={{ fontWeight: 400 }}
-                  >
+                  <span className="font-sans font-normal text-[16px] leading-[120%] tracking-[1.5%]">
                     {t.name}
                   </span>
                 </div>
-                <h3
-                  className="font-saira-condensed font-bold text-[20px]  leading-[1.04] uppercase mb-4"
-                  style={{ fontWeight: 700 }}
-                >
+                <h3 className=" font-bold text-[20px] leading-[1.04] uppercase mb-4">
                   {t.title}
                 </h3>
 

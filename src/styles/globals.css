@@ -1,18 +1,15 @@
+@import "tailwindcss";
 .custom-swiper .swiper-slide {
-  width: 274 !important;
-  height: 264px !important;
-  @apply md:mr-5;
+  @apply md:mr-5 !w-[274px] !h-[264px];
 }
 .custom-swiper .swiper-wrapper {
   @apply !my-18;
 }
 @media (max-width: 768px) {
   .custom-swiper .swiper-slide {
-    width: 270px !important;
-    height: 380px !important;
+    @apply !w-[270px] !h-[380px];
   }
 }
-@import "tailwindcss";
 
 .swiper-pagination {
   @apply hidden md:flex justify-end items-center absolute !w-[40%] z-50 !left-[345px]  !bottom-[94px];
@@ -26,16 +23,9 @@
 }
 
 .custom-swiper .swiper-pagination-progressbar {
-  position: relative !important;
-  bottom: -46px !important;
-  height: 4px !important;
-  left: -40px !important;
-  background: #2a2a2a;
-  border-radius: 9999px;
-  width: 80% !important;
+  @apply !relative !bottom-[-46px] !h-[4px] !left-[-40px] bg-[#2a2a2a] rounded-[9999px] !w-[80%];
 }
 .custom-swiper .swiper-pagination-progressbar-fill {
-  background: #f0e74d !important;
-  border-radius: 9999px;
   transition: transform 0.2s linear;
+  @apply !bg-[#f0e74d] rounded-[9999px];
 }
